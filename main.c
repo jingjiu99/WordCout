@@ -38,7 +38,7 @@ int countw(char *file)//返回文件词的数目
     else{
     	 while(!feof(f)) { 
 		ch=fgetc(f);
-	 	if((ch==',')||(ch==' ')||(ch==-1)){
+	 	if((ch==',')||(ch==' ')||(ch==-1)||(ch=='\n')){
 	 //		printf("-%c \n",ch);
 			 n++;	
 	 	} 
